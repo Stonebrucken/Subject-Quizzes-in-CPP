@@ -74,22 +74,22 @@ int main()
     // The Second last Integer will be equatable to the correct answer
     q1.setValues("Question 1: Which type of cell does NOT contain a Nucleus?", "Bacterial Cell",
                  "Bone Marrow Cell", "Liver Cell",
-                 "Red Blood Cell", 1, 10);
+                 "Stem Cell", 1, 5);
     q2.setValues("Qeustion 2: Where is Ethene produced?: ", "In the tip of the shoot in a plant",
                  "From Bananas", "Top of the leaf",
-                 "In Plant Roots", 2, 10);
+                 "In Plant Roots", 2, 5);
     q3.setValues("Question 3: What does Xylem transport in a plant?", "Water",
                  "Sugars", "Enzymes",
-                 "Carbon Dioxide", 1, 10);
+                 "Carbon Dioxide", 1, 5);
     q4.setValues("Question 4: What is the function of aveoli in the respiratory system?", "To breathe",
                  "To help respirate anaerobically during oxygen debt", "Used for Gas Exchange in the human body",
-                 "To regulate the flow of blood in nearby capillaries", 3, 10);
+                 "To regulate the flow of blood in nearby capillaries", 3, 5);
     q5.setValues("Question 5: What prevents the backflow of blood?", "Arteries",
                  "Pressure", "Pacemaker Cells",
-                 "Valves", 4, 10);
+                 "Valves", 4, 5);
     q6.setValues("Question 6: What objective lens should be used last in a microscope?", "40x",
                  "4x", "10x",
-                 "None of the above", 1, 10);
+                 "None of the above", 1, 5);
 
  
     q1.askQuestion();
@@ -107,7 +107,7 @@ int main()
     // Displays the results
  
     // If the player passes the quiz then this happens
-    if (Total >= 50) {
+    if (Total >= 20) {
         cout << "Congrats you passed the Biology"
              << " quiz!" << endl;
     }
