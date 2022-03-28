@@ -192,3 +192,4 @@ void Question::askQuestion()
              << "." << endl;
         cout << endl;
     }
+}
