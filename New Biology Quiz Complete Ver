@@ -1,0 +1,248 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int Guess;
+int Total;
+ 
+// Question Class or Question Prompt
+class Question {
+private:
+    string Question_Text;
+    string Answer_1;
+    string Answer_2;
+    string Answer_3;
+    string Answer_4;
+    int Correct_Answer;
+    int Question_Score;
+ 
+public:
+    // Setter Function
+    void setValues(string, string,
+                   string, string,
+                   string, int, int);
+ 
+    // Function to ask questions
+    void askQuestion();
+};
+ 
+// Driver code
+int main()
+{
+    cout << "\n\n\t\t\t\tTHE GCSE BIOLOGY QUIZ UPDATED VERSION"
+         << endl;
+    cout << "\nPress Enter to start "
+         << "the quiz... " << endl;
+ 
+    // Input
+    cin.get();
+ 
+    string Name;
+ 
+    // Input the details
+    cout << "What is your name biologist?"
+         << endl;
+    cin >> Name;
+    cout << endl;
+ 
+    string Respond;
+    cout << "Are you ready to take"
+         << " the quiz " << Name
+         << "? yes/no" << endl;
+    cin >> Respond;
+ 
+    if (Respond == "yes", "y", "yeah", "ye", "YES") {
+        cout << endl;
+        cout << "Good Luck! Make sure to get full marks." << endl;
+    }
+    else {
+        cout << "Okay Bye!" << endl;
+        return 0;
+    }
+ 
+    // Objects of Question Class
+    Question q1;
+    Question q2;
+    Question q3;
+    Question q4;
+    Question q5;
+    Question q6;
+    Question q7;
+    Question q8;
+    Question q9;
+    Question q10;
+    Question q11;
+    Question q12;
+    Question q13;
+    Question q14;
+    Question q15;
+    Question q16;
+    Question q17;
+    Question q18;
+ 
+   
+    // The Second last Integer will be equatable to the correct answer
+    q1.setValues("Question 1: Which type of cell does NOT contain a Nucleus?", "Bacterial Cell",
+                 "Bone Marrow Cell", "Liver Cell",
+                 "Stem Cell", 1, 5);
+    q2.setValues("Qeustion 2: What causes Anaerobic Respiration to take place?: ", "Increase of Thyroxide Levels",
+                 "Oxygen Debt or Lack of Oxygen", "Carbon Monoxide",
+                 "Increase of Oxygen Levels used for respiration", 2, 5);
+    q3.setValues("Question 3: What does Xylem transport in a plant?", "Water",
+                 "Sugars", "Enzymes",
+                 "Carbon Dioxide", 1, 5);
+    q4.setValues("Question 4: What is the function of aveoli in the respiratory system?", "To breathe",
+                 "To help respirate anaerobically during oxygen debt", "Used for Gas Exchange in the human body",
+                 "To regulate the flow of blood in nearby capillaries", 3, 5);
+    q5.setValues("Question 5: What prevents the backflow of blood?", "Arteries",
+                 "Pressure", "Pacemaker Cells",
+                 "Valves", 4, 5);
+    q6.setValues("Question 6: What objective lens should be used last in a microscope?", "40x",
+                 "4x", "10x",
+                 "None of the above", 1, 5);
+    q7.setValues("Question 7: Name a use of  Gibberellins", "Ripening of fruits",
+                 "Ending seed dormancy", "Initiating Seed Germination",
+                 "None of the above", 3, 5);
+    q8.setValues("Qeustion 8: Name how Receptors are used: ", "To release a sudden reaction",
+                 "To detect changes in environment (reflex arc)", "For mitosis",
+                 "To increase levels of neurotransmitters between the synapse", 2, 5);
+    q9.setValues("Question 9: How is Mitosis used?", "For Growth and Repair",
+                 "For genetic modification", "Gametes",
+                 "For growth of cells", 1, 5);
+    q10.setValues("Question 10: Name all components of the reflex arc by order", "Sensory Neurone - Effector - Motor Neurone - Receptor - Relay Neurone",
+                 "Receptor - Effector", "Receptor - Sensory Neurone - Relay Neurone - Motor Neurone - Effector",
+                 "None of the Above", 3, 5);
+    q11.setValues("Question 11: What is the function of the Hypothalamus in the brain?", "Used to regulate unconscious behaviour",
+                 "To regulate levels of Thyroxide", "To support the release of LH and FSH",
+                 "To regulate levels of temperature", 4, 5);
+    q12.setValues("Question 12: What is reffered to as the master gland in the human body?", "Pituatry gland",
+                 "Adrenal gland", "Thyroid",
+                 "Hypothalamus", 1, 5);
+             q6.setValues("Question 6: What objective lens should be used last in a microscope?", "40x",
+                 "4x", "10x",
+                 "None of the above", 1, 5);
+    q13.setValues("Question 13: Describe the structure of DNA", "Long",
+                 "Polygon", "Double Helix or Polymer",
+                 "Polymer", 3, 5);
+    q14.setValues("Qeustion 14: How is DNA stored in a prokaryotic cell?", "In a Chromosome",
+                 "DNA floats in the cell, stored in DNA loops/plasmids", "Stored in the cytoplasm",
+                 "Stored as a ring of DNA", 2, 5);
+    q15.setValues("Question 15: What the initialiser of a food chain referred to as?", "Producer",
+                 "Predator", "Effector",
+                 "Herbivore", 1, 5);
+    q16.setValues("Question 16: Name one use of Ethene", "Promote seed germination",
+                 "To kill Auxin", "Faster Ripening of Fruits",
+                 "To kill bacteria/viruses", 3, 5);
+    q17.setValues("Question 17: Who envisioned the Theory of Evolution?", "Lamarck",
+                 "Carl Woese", "Napoleon Bonaparté",
+                 "Charles Darwin", 4, 5);
+    q18.setValues("Question 18: Name all elements of the species clsssification table by order:", "Species - Genus - Family - Order - Class - Phylum - Kingdom",
+                 "Genus - Family - Domain - Order - Species", "Species - Domain",
+                 "None of the above", 1, 5);
+             
+
+ 
+    q1.askQuestion();
+    q2.askQuestion();
+    q3.askQuestion();
+    q4.askQuestion();
+    q5.askQuestion();
+    q6.askQuestion();
+    q7.askQuestion();
+    q8.askQuestion();
+    q9.askQuestion();
+    q10.askQuestion();
+    q11.askQuestion();
+    q12.askQuestion();
+    q13.askQuestion();
+    q14.askQuestion();
+    q15.askQuestion();
+    q16.askQuestion();
+    q17.askQuestion();
+    q18.askQuestion();
+   
+    // Displays the total score
+    cout << "Total Score = " << Total
+         << "out of 90" << endl;
+ 
+    // Displays the results
+ 
+    // If the player passes the quiz then this happens
+    if (Total >= 55) {
+        cout << "Congrats you passed the Biology"
+             << " quiz!" << endl;
+    }
+ 
+    // Otherwise
+    else {
+        cout << "You failed the quiz."
+             << endl;
+        cout << "Better luck next time and make sure to study more for the next quiz :D."
+             << endl;
+    }
+    return 0;
+}
+ 
+// Function to set the values of
+// the questions
+void Question::setValues(
+    string q, string a1,
+    string a2, string a3,
+    string a4, int ca, int pa)
+{
+    Question_Text = q;
+    Answer_1 = a1;
+    Answer_2 = a2;
+    Answer_3 = a3;
+    Answer_4 = a4;
+    Correct_Answer = ca;
+    Question_Score = pa;
+}
+ 
+// Function to ask questions
+void Question::askQuestion()
+{
+    cout << endl;
+ 
+    // Print the questions
+    cout << Question_Text << endl;
+    cout << "1. " << Answer_1 << endl;
+    cout << "2. " << Answer_2 << endl;
+    cout << "3. " << Answer_3 << endl;
+    cout << "4. " << Answer_4 << endl;
+    cout << endl;
+ 
+    // Display the answer
+    cout << "What is your answer?(enter your answer as an integer ranging from answers 1-4)"
+         << endl;
+    cin >> Guess;
+ 
+    // If the answer is correct
+    if (Guess == Correct_Answer) {
+        cout << endl;
+        cout << "Correct !" << endl;
+ 
+        // Update the correct score
+        Total = Total + Question_Score;
+        cout << "Score = " << Question_Score
+             << " out of "
+             << Question_Score
+             << "!" << endl;
+        cout << endl;
+    }
+ 
+    // Otherwise
+    else {
+        cout << endl;
+        cout << "Wrong !" << endl;
+        cout << "Score = 0"
+             << " out of "
+             << Question_Score
+             << "!" << endl;
+        cout << "Correct answer = "
+             << Correct_Answer
+             << "." << endl;
+        cout << endl;
+    }
+}
