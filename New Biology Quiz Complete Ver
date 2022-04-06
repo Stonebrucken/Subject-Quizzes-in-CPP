@@ -119,9 +119,6 @@ int main()
     q12.setValues("Question 12: What is reffered to as the master gland in the human body?", "Pituatry gland",
                  "Adrenal gland", "Thyroid",
                  "Hypothalamus", 1, 5);
-             q6.setValues("Question 6: What objective lens should be used last in a microscope?", "40x",
-                 "4x", "10x",
-                 "None of the above", 1, 5);
     q13.setValues("Question 13: Describe the structure of DNA", "Long",
                  "Polygon", "Double Helix or Polymer",
                  "Polymer", 3, 5);
